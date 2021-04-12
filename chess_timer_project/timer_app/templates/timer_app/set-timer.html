@@ -1,0 +1,29 @@
+{% extends 'timer_app/base.html' %}
+
+
+
+{% block main_content %}
+<div class='container mt-0'>
+    <div class='row' id='firstForm'>
+        <h1>Fill the credentials</h1>
+        <div class='col-sm-12 '>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="example : 'teguh'">
+                  <label for="floatingInputBlack" >Player 1 Name</label>
+                </div>
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="example : 'satya'">
+                  <label for="floatingInput">Player 2 Name</label>
+                </div>
+            </div>
+        <button class='btn btn-success mt-3 col-sm-12' onclick='nextForm()'>Next</button>
+    </div>
+    <div class='row d-none' id='secondForm'>
+        <h1>Set the clock</h1>
+        <h1 class='display-1'>00:00:00</h1>
+        <button class='btn btn-success mt-3 col-sm-12' value='submit'>Begin</button>
+    </div>
+</div>
+{% endblock %}
+
+

@@ -1,3 +1,15 @@
 body{
     font-family: 'Bebas Neue';
 }
+
+.wr-black, label{
+    color:'black';
+}
+
+label[for^=floatingInput]{
+    color:'#000000';
+}
+
+.active-form{
+    display :'none';
+}

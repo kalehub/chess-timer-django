@@ -3,7 +3,7 @@ from . import views
 
 urlpatterns = [
         path('', views.index, name='index'),
-        path('timer-chess/', views.chess_timer, name='chess_timer'),
+        path('set-timer', views.chess_timer, name='chess_timer'),
         ]
 
 

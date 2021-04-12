@@ -4,10 +4,10 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return render(request, 'timer_app/base.html')
+    return render(request, 'timer_app/index.html')
 
 
 def chess_timer(request):
-    return HttpResponse('hello timer page!')
+    return render(request, 'timer_app/set-timer.html')
 
 
