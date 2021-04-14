@@ -1,0 +1,9 @@
+to do:
+------
+
+#DONE# link index 'set timer' button to set timer page
+#DONE$ fixing form in set timer page
+#DONE@ adding button number option to chess timer
+
+
+

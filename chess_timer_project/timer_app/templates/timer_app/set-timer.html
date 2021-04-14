@@ -8,21 +8,27 @@
         <h1>Fill the credentials</h1>
         <div class='col-sm-12 '>
                 <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="example : 'teguh'">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="example : 'teguh'">
                   <label for="floatingInputBlack" >Player 1 Name</label>
                 </div>
                 <div class="form-floating">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="example : 'satya'">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="example : 'satya'">
                   <label for="floatingInput">Player 2 Name</label>
                 </div>
             </div>
-        <button class='btn btn-success mt-3 col-sm-12' onclick='nextForm()'>Next</button>
+        <button type='button' class='btn btn-success mt-3 col-sm-12' onclick='nextForm()'>Next</button>
     </div>
-    <div class='row d-none' id='secondForm'>
+    <div class='d-none' id='secondForm'>
         <h1>Set the clock</h1>
-        <h1 class='display-1'>00:00:00</h1>
-        <button class='btn btn-success mt-3 col-sm-12' value='submit'>Begin</button>
+        <h1 class='display-1' id='gameClock'>00:00:00</h1>
+
+        <button type="button" class="btn btn-success" value="05" onclick='clockClicked(this.value)'>5 Min</button>
+    <button type="button" class="btn btn-success" value="10" onclick='clockClicked(this.value)'>10 Min</button>
+    <button type="button" class="btn btn-success" value="20" onclick='clockClicked(this.value)'>20 Min</button>
+    <button type="button" class="btn btn-success" value="25" onclick='clockClicked(this.value)'>25 Min</button>
+    <button type="button" class="btn btn-success" value="30" onclick='clockClicked(this.value)'>30 Min</button>
     </div>
+    
 </div>
 {% endblock %}
 
